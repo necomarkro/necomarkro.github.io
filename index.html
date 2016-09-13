@@ -1,7 +1,90 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <title>Virus Battle Web Tool</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <h1>BN4 Virus Battle Tool</h1>
+        <table style="margin: auto; border-spacing: 0" class="tile">
+            <tr class="tile-r1">
+                <td class="tile-c1">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r1_r_bn4.png" onclick="VB.switchTile(1);">
+                        <img class="virus" id="virus-1" src="">
+                    </div>
+                </td>
+                <td class="tile-c2">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r1_r_bn4.png" onclick="VB.switchTile(2);">
+                        <img class="virus" id="virus-2" src="">
+                    </div>
+                </td>
+                <td class="tile-c3">
+                    <div class="tile">
+                    <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r1_r_bn4.png" onclick="VB.switchTile(3);">
+                    <img class="virus" id="virus-3" src="">
+                </td>
+            </tr>
+            <tr class="tile-r2">
+                <td class="tile-c1">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r2_r_bn4.png" onclick="VB.switchTile(4);">
+                        <img class="virus" id="virus-4" src="">
+                    </div>
+                </td>
+                <td class="tile-c2">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r2_r_bn4.png" onclick="VB.switchTile(5);">
+                        <img class="virus" id="virus-5" src="">
+                    </div>
+                </td>
+                <td class="tile-c3">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r2_r_bn4.png" onclick="VB.switchTile(6);">
+                        <img class="virus" id="virus-6" src="">
+                    </div>          
+                </td>
+            </tr>
+            <tr class="tile-r3">
+                <td class="tile-c1">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r3_r_bn4.png" onclick="VB.switchTile(7);">
+                        <img class="virus" id="virus-7" src="">
+                    </div>  
+                </td>
+                <td class="tile-c2">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r3_r_bn4.png" onclick="VB.switchTile(8);">
+                        <img class="virus" id="virus-8" src="">
+                    </div> 
+                </td>
+                <td class="tile-c3">
+                    <div class="tile">
+                        <input type="image" width="40" height="24" class="tile-icon" src="tiles/Panel_r3_r_bn4.png" onclick="VB.switchTile(9);">
+                        <img class="virus" id="virus-9" src="">
+                    </div> 
+                </td>
+            </tr>
+            <tr class="tile-r4">
+                <td class="tile-c1">
+                    <img width="40" height="8" class="tile-icon" src="tiles/Panel_bottom_r_bn4.png">
+                </td>
+                <td class="tile-c2">
+                    
+                    <img width="40" height="8" class="tile-icon" src="tiles/Panel_bottom_r_bn4.png">
+                </td>
+                <td class="tile-c3">
+                    <img width="40" height="8" class="tile-icon" src="tiles/Panel_bottom_r_bn4.png">
+                </td>
+            </tr>
+            <tr><select id="virus-select" onchange="VB.update();"></select></tr>
+        </table>
+        <input type="text" maxlength="27" id="code" pattern="[0-9A-Z\-]{24,27}">
+        <input type="button" value="Load Code" onclick="VB.loadCode();">
+        <input type="button" value="Generate Code" onclick="VB.generateCode();">        
+        <script type="text/javascript">VB.init();</script>
+    </body>
 </html>
