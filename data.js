@@ -267,14 +267,14 @@ var NData = {
         chips[0x116] = "VideoMan";
         chips[0x117] = "VideMnSP";
         chips[0x118] = "VideMnDS";
-        chips[0x119] = "Marking";
-        chips[0x11A] = "CannMode";
-        chips[0x11B] = "CannBall";
-        chips[0x11C] = "SwrdMode";
-        chips[0x11D] = "FirePlus";
-        chips[0x11E] = "ThunPlus";
-        chips[0x11F] = "AquaPowr";
-        chips[0x120] = "WoodPowr";
+        //chips[0x119] = "Marking";
+        //chips[0x11A] = "CannMode";
+        //chips[0x11B] = "CannBall";
+        //chips[0x11C] = "SwrdMode";
+        //chips[0x11D] = "FirePlus";
+        //chips[0x11E] = "ThunPlus";
+        //chips[0x11F] = "AquaPowr";
+        //chips[0x120] = "WoodPowr";
         chips[0x121] = "BlakWeap";
         chips[0x122] = "FinalGun";
         chips[0x12D] = "Bass";
@@ -323,5 +323,148 @@ var NData = {
         folder[29] = chips[0x95];
         folder[30] = chips[0x95];
         return folder;
+    }(),
+    
+    navis: function() {
+        navis = [];
+        navis[0x00] = "MegaMan";
+        navis[0x01] = "Roll";
+        navis[0x02] = "GutsMan";
+        navis[0x03] = "WindMan";
+        navis[0x04] = "SearchMan";
+        navis[0x05] = "FireMan";
+        navis[0x06] = "ThunderMan";
+        navis[0x07] = "ProtoMan";
+        navis[0x08] = "NumberMan";
+        navis[0x09] = "MetalMan";
+        navis[0x0A] = "JunkMan";
+        navis[0x0B] = "AquaMan";
+        navis[0x0C] = "WoodMan";
+        return navis;
+    }(),
+    
+    modcard0A: function() {
+        mods = [];
+        mods[00] = "Buster: Mini Bomb";
+        mods[01] = "HP+100";
+        mods[04] = "HP+150";
+        mods[05] = "HP+200";
+        mods[08] = "HP+250";
+        mods[09] = "HP+300";
+        mods[12] = "Blind Buster";
+        mods[13] = "Grass Buster";
+        mods[19] = "Buster Attack 10 (HP Bug)";
+        mods[33] = "HP+400";
+        mods[38] = "HP+500 (HP Bug)";
+        mods[43] = "Crack Buster";
+        mods[44] = "Swamp Buster";
+        mods[47] = "Buster: Guard 1";
+        mods[48] = "Buster: Crack Out";
+        mods[49] = "Buster Attack 15 (HP Bug, Confusion)";
+        mods[64] = "HP+600";
+        mods[67] = "HP+700 (Confusion)";
+        mods[92] = "HP+750";
+        mods[94] = "HP+800";
+        mods[96] = "HP+850";
+        mods[102] = "Ice Buster";
+        mods[106] = "Buster: Reflect (HP Bug)";
+        mods[107] = "Buster: Flower";
+        //mods[111] = "GigaFolder1";
+        return mods;
+    }(),
+    
+    modcard0B: function() {
+        mods = [];
+        mods[03] = "HP+150";
+        mods[06] = "HP+200";
+        mods[10] = "HP+300";
+        mods[31] = "HP+350";
+        mods[34] = "HP+400";
+        mods[35] = "HP+450 (HP Bug)";
+        //mods[050] = "GigaFolder1";
+        mods[61] = "HP+550";
+        mods[66] = "HP+650 (HP Bug)";
+        //mods[074] = "Triple Support Part 1";
+        mods[91] = "HP+700 (Poison Panel)";
+        mods[93] = "HP+750 (HP Bug)";
+        mods[97] = "HP+850 (HP Bug)";
+        mods[99] = "HP+900 (HP Bug)";
+        mods[100] = "HP+950 (HP Bug)";
+        return mods;
+    }(),
+    
+    modcard0C: function() {
+        mods = [];
+        mods[02] = "HP+100";
+        mods[07] = "HP+250";
+        mods[11] = "First Barrier 100 (HP Bug)";
+        mods[32] = "HP+350";
+        mods[36] = "HP+350 (Confusion)";
+        //mods[045] = "First Full Synchro";
+        mods[46] = "First Barrier 200 (HP Bug)";
+        mods[59] = "MegaMan Color: Red";
+        mods[60] = "MegaMan Color: Yellow";
+        mods[63] = "HP+600";
+        //mods[075] = "Triple Support Part 2";
+        //mods[076] = "All Guard Part 1";
+        mods[78] = "First Life Aura (HP Bug)";
+        mods[89] = "MegaMan Color: White";
+        mods[90] = "MegaMan Color: Green";
+        //mods[109] = "MegaFolder3";
+        return mods;
+    }(),
+    
+    modcard0D: function() {
+        mods = [];
+        mods[14] = "Panel Change: Metal";
+        mods[15] = "Panel Change: Crack";
+        mods[16] = "Panel Change: Break";
+        //mods[018] = "MegaFolder2";
+        mods[62] = "HP+550";
+        //mods[077] = "All Guard Part 2";
+        mods[105] = "Panel Change: Holy (HP Bug)";
+        return mods;
+    }(),
+    
+    modcard0E: function() {
+        mods = [];
+        mods[20] = "Charge: Guts Machine Gun";
+        mods[21] = "Charge: Cannon";
+        mods[22] = "Charge: MiniBomb";
+        mods[23] = "Charge: Heat Shot";
+        mods[24] = "Charge: Bubble Shot";
+        mods[25] = "Charge: Thunder 1";
+        mods[26] = "Charge: Sword";
+        mods[27] = "Charge: Spreader";
+        mods[37] = "HP+500";
+        mods[51] = "Charge: Copy Damage";
+        mods[52] = "Charge: Wide Shot 1";
+        mods[53] = "Charge: Blizzard";
+        mods[54] = "Charge: Heat Breath";
+        mods[55] = "Charge: Elec Shock";
+        mods[56] = "Charge: Wood Powder";
+        mods[57] = "Charge: Panel Return";
+        mods[58] = "Charge: Wide Sword";
+        mods[65] = "HP+650";  
+        mods[79] = "Charge: Dark Hole";
+        mods[80] = "Charge: Wide Shot 2";
+        mods[81] = "Charge: Zap Ring";
+        mods[82] = "Charge: Sand Ring";
+        mods[83] = "Charge: Energy Bomb";
+        mods[84] = "Charge: Thunder 2";
+        mods[85] = "Charge: Repair";
+        mods[86] = "Charge: Triple Crack";
+        mods[87] = "Charge: Long Sword";
+        mods[98] = "HP+900";
+        mods[101] = "HP+1000";
+        mods[113] = "Charge: Wide Shot 3";
+        mods[114] = "Charge: Thunder 3";
+        mods[115] = "Charge: Wind Rack";
+        mods[116] = "Charge: Mega Energy Bomb";
+        mods[117] = "Charge: Cannon Ball";
+        mods[118] = "Charge: Bug Bomb";
+        mods[119] = "Charge: Wide Blade";
+        mods[120] = "Charge: Long Blade";
+        return mods;
     }(),
 };

@@ -26,12 +26,34 @@
         </table>
         <table style="margin: auto;">
             <tr>
-                <td><input type="submit" value="Submit" onclick="NGen.submit();"></td>
-                <td><input type="text" size="60" maxlength="60" id="code" pattern="[0-9A-Z]{60}"></td>
+                <td><b>Mod Card 1:</b></td>
+                <td><b>Mod Card 2:</b></td>
+                <td><b>Mod Card 3:</b></td>
+                <td><b>Mod Card 4:</b></td>
+                <td><b>Mod Card 5:</b></td>
+            </tr>
+            <tr>
+                <td><select id="mod0A" onchange="NGen.modupdate();"><option value="None">None</option></select></td>
+                <td><select id="mod0B" onchange="NGen.modupdate();"><option value="None">None</option></select></td>
+                <td><select id="mod0C" onchange="NGen.modupdate();"><option value="None">None</option></select></td>
+                <td><select id="mod0D" onchange="NGen.modupdate();"><option value="None">None</option></select></td>
+                <td><select id="mod0E" onchange="NGen.modupdate();"><option value="None">None</option></select></td>
             </tr>
         </table>
-        <b>Copy above code and on twitch whisper BCCplaysBCC with "!code {insert code here}"</b>
-        <p>Whisper BCCplaysBCC with "!nickname {3 Letter Nickname}" to change the nickname of your navi</p>
+        <table style="margin: auto;">
+            <tr>
+                <td><b>Folder Code:</b></td>
+                <td><input type="text" size="60" maxlength="60" id="code" pattern="[0-9A-Z]{62}"></td>
+            </tr>
+            <tr>
+                <td><b>Mod Card Code:</b></td>
+                <td><input type="text" size="10" maxlength="10" id="modcode" pattern="[0-9A-F]{10}"></td>
+            </tr>
+        </table>
+        <b>Copy "Folder Code:" above and whisper BCCplaysBCC with "!code {insert code here}"</b>
+        <br>
+        <b>Copy "Mod Card Code:" above and whisper BCCplaysBCC with "!modcard {insert code here}"</b>
+        <p>Whisper BCCplaysBCC with "!nickname {3 Letter Nickname}" to change the nickname of your navi</p> 
         <script type="text/javascript">NGen.init();</script>
     </body>
 </html>
